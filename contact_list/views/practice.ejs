@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>
+            <%= locals.title%>
+        </title>
+    </head>
+    <body>
+        <h1>Hey! it's your practice page.</h1>
+
+        <ul>
+            <% for(let i=1; i<6; i++){%>
+                <li>
+                    <%= i %>
+                </li>
+                <%}%>
+        </ul>
+
+        
+        <% if(x%2!=0){%>
+            <h1>Yes, it is divisible by 2.</h1>
+        <% }else{%>
+                <h1>Not Divisible by 2.</h1>
+            <%} %>
+
+            <% if (user.admin){%>
+                <h1>Login successfull</h1>
+                <p>Hello, I am <%= user.firstName %></p>
+                <% }else{ %>
+                    <h1>Login Failed!</h1>
+                    <% } %>
+
+
+        <!-- -------------------------------------------- -->
+        <!-- ContactList -->
+        
+    </body>
+</html>
